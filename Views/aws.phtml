@@ -1,0 +1,38 @@
+<?php require('template/header.phtml') ?>
+<h2>
+    Add new key
+</h2>
+<p>Please make sure your AWS account has the correct permissions.</p>
+<p>You will need an IAM user that can create access keys and modify your billing settings</p>
+<a href="https://repost.aws/knowledge-center/create-access-key" target="_blank">Go to this link for more information</a>
+<p>Enable the Cost and Usage Reports Billing AWS feature.
+    - This feature needs to be enabled so your account can start generating co
+    st and usage reports.
+    - To enable, navigate to your account's billing section, and click on the
+    "Cost and Usage Reports" tab.
+    - Make sure to select “Amazon Athena” for report data integration.
+    - Reference Cost and Usage Reports documentation <a href="https://docs.aws.am
+    azon.com/cur/latest/userguide/what-is-cur.html." target="_blank">here.</a></p>
+<form>
+    <div class="mb-3">
+        <label for="AWS Account ID" class="form-label">AWS Account ID</label>
+        <input type="text" class="form-control" id="AWSID" name="AWSID"">
+    </div>
+    <div class="mb-3">
+        <label for="AWS Account Name" class="form-label">AWS Account Name</label>
+        <input type="text" class="form-control" id="AWSNAME" name="AWSAccountName">
+    </div>
+    <div class="mb-3">
+        <label for="AWS Region" class="form-label">AWS Region</label>
+        <input type="text" class="form-control" id="AWSREGION" name="AWSRegion">
+    </div>
+    <div class="mb-3">
+        <label for="AWS Role Name" class="form-label">AWS Role Name</label>
+        <input type="text" class="form-control" id="AWSROLE" name="AWSRole">
+    </div>
+    <div class="col-xs-12 text-center">
+        <button type="submit" class="btn btn-primary" name="button1">Submit</button>
+    </div>
+</form>
+
+<?php require('template/footer.phtml') ?>

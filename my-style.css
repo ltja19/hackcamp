@@ -1,0 +1,62 @@
+#title {
+    margin-top: 12px;
+    background-color: #3d3d3d;
+    color: white;
+
+}
+h1 {
+    float: left;
+}
+#irisLogo{
+    float: left;
+    padding-right: 15px;
+}
+#menu {
+    border-top: solid 6px #03f7ff;
+    background-color: #f00;
+    color: #fff;
+    /*height: 400px;*/
+}
+
+#menu a {
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+#menu a:hover {
+    background-color: #f00;
+    color: white;
+    text-decoration:underline;
+    display: block;
+}
+
+#content {
+    background-color: #282828;
+    border-top: solid 6px #03f7ff;
+    color: white;
+
+}
+
+#footer {
+    margin_top: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+html {
+    background-color: grey;
+    color: white;
+}
+
+body {
+    background-color: grey;
+}
+
+div{
+    border-radius: 15px;
+}
+main{
+    border-radius: 15px;
+}
